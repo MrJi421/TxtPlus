@@ -1,0 +1,12 @@
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\bin\Release\TxtPlus.exe.config
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\bin\Release\TxtPlus.exe
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\bin\Release\TxtPlus.pdb
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\bin\Release\TxtPlus.xml
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\obj\Release\TxtPlus.vbproj.AssemblyReference.cache
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\obj\Release\TxtPlus.TxtPlus.resources
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\obj\Release\TxtPlus.Resources.resources
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\obj\Release\TxtPlus.vbproj.GenerateResource.cache
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\obj\Release\TxtPlus.vbproj.CoreCompileInputs.cache
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\obj\Release\TxtPlus.exe
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\obj\Release\TxtPlus.xml
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\obj\Release\TxtPlus.pdb
