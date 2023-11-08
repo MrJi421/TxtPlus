@@ -76,6 +76,24 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Dialog1.Designer.vb">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Dialog1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TxtPlus.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +118,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Dialog1.resx">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TxtPlus.resx">
       <DependentUpon>TxtPlus.vb</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +151,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\soiconsline-06.png" />
+    <None Include="Resources\Your paragraph text.png" />
+    <None Include="Resources\redo.png" />
     <Content Include="Your paragraph text.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

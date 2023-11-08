@@ -79,35 +79,6 @@ Public Class TxtPlus
 
     Private Sub PrintDocument_PrintPage(sender As Object, e As PrintPageEventArgs)
 
-        ' This is the PrintPage event handler
-        Dim printFont As New Font("Arial", 12)
-        Dim printBrush As New SolidBrush(Color.Black)
-        Dim leftMargin As Integer = 50
-        Dim topMargin As Integer = 50
-
-        ' Calculate the number of lines per page
-        linesPerPage = e.MarginBounds.Height / printFont.GetHeight(e.Graphics)
-
-        ' Calculate the bounds of the content to print on this page
-        Dim rect As New RectangleF(leftMargin, topMargin, e.MarginBounds.Width, e.MarginBounds.Height)
-
-        ' Calculate the characters that fit on the page
-        Dim charactersOnPage As Integer = 0
-        Dim linesFitted As Integer = 0
-        ' e.Graphics.MeasureString(printContent.Substring(linesPrintedSoFar), printFont, e.MarginBounds.Size, StringFormat.GenericTypographic, charactersOnPage, linesFitted)
-
-        ' Print the text to the page
-        'e.Graphics.DrawString(printContent.Substring(linesPrintedSoFar, charactersOnPage), printFont, printBrush, rect)
-
-        ' Increment the counters
-        linesPrintedSoFar += linesFitted
-
-        ' Check if there is more text to print
-        '   If linesPrintedSoFar < printContent.Length Then
-        '  e.HasMorePages = True
-        '  Else
-        'e.HasMorePages = False
-        'End If
     End Sub
 
 
@@ -188,5 +159,15 @@ Public Class TxtPlus
         RichTextBox1.SelectAll()
     End Sub
 
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        AboutBox1.Show()
+    End Sub
 
+    Private Sub CustomizeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CustomizeToolStripMenuItem.Click
+        Customize.ShowDialog()
+    End Sub
+
+    Private Sub TxtPlus_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        RichTextBox1.ForeColor = Color.Black
+    End Sub
 End Class

@@ -49,8 +49,8 @@ Partial Class TxtPlus
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.IndexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SearchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IndexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.toolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
@@ -250,7 +250,7 @@ Partial Class TxtPlus
         '
         'HelpToolStripMenuItem
         '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContentsToolStripMenuItem, Me.IndexToolStripMenuItem, Me.SearchToolStripMenuItem, Me.toolStripSeparator5, Me.AboutToolStripMenuItem})
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContentsToolStripMenuItem, Me.SearchToolStripMenuItem, Me.IndexToolStripMenuItem, Me.toolStripSeparator5, Me.AboutToolStripMenuItem})
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
         Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.HelpToolStripMenuItem.Text = "&Help"
@@ -258,30 +258,32 @@ Partial Class TxtPlus
         'ContentsToolStripMenuItem
         '
         Me.ContentsToolStripMenuItem.Name = "ContentsToolStripMenuItem"
-        Me.ContentsToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.ContentsToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.ContentsToolStripMenuItem.Text = "&Contents"
-        '
-        'IndexToolStripMenuItem
-        '
-        Me.IndexToolStripMenuItem.Name = "IndexToolStripMenuItem"
-        Me.IndexToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
-        Me.IndexToolStripMenuItem.Text = "&Index"
         '
         'SearchToolStripMenuItem
         '
         Me.SearchToolStripMenuItem.Name = "SearchToolStripMenuItem"
-        Me.SearchToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.SearchToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl + F"
+        Me.SearchToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.SearchToolStripMenuItem.Text = "&Search"
+        '
+        'IndexToolStripMenuItem
+        '
+        Me.IndexToolStripMenuItem.Name = "IndexToolStripMenuItem"
+        Me.IndexToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl + H"
+        Me.IndexToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
+        Me.IndexToolStripMenuItem.Text = "Replace"
         '
         'toolStripSeparator5
         '
         Me.toolStripSeparator5.Name = "toolStripSeparator5"
-        Me.toolStripSeparator5.Size = New System.Drawing.Size(119, 6)
+        Me.toolStripSeparator5.Size = New System.Drawing.Size(161, 6)
         '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.AboutToolStripMenuItem.Text = "&About..."
         '
         'RichTextBox1
@@ -309,7 +311,7 @@ Partial Class TxtPlus
         Me.ToolStrip1.Location = New System.Drawing.Point(3, 24)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
-        Me.ToolStrip1.Size = New System.Drawing.Size(285, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(254, 25)
         Me.ToolStrip1.TabIndex = 4
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -325,7 +327,7 @@ Partial Class TxtPlus
         'Redobtn
         '
         Me.Redobtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.Redobtn.Image = CType(resources.GetObject("Redobtn.Image"), System.Drawing.Image)
+        Me.Redobtn.Image = Global.TxtPlus.My.Resources.Resources.redo
         Me.Redobtn.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.Redobtn.Name = "Redobtn"
         Me.Redobtn.Size = New System.Drawing.Size(23, 22)

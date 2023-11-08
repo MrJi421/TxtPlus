@@ -10,3 +10,6 @@ C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\bin\Debug
 C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\obj\Debug\TxtPlus.exe
 C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\obj\Debug\TxtPlus.xml
 C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\obj\Debug\TxtPlus.pdb
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\obj\Debug\TxtPlus.AboutBox1.resources
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\obj\Debug\TxtPlus.Customize.resources
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\TxtPlus\TxtPlus\obj\Debug\TxtPlus.SplashScreen1.resources

@@ -22,5 +22,20 @@ TxtPlus
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:TxtPlus.My.Resources.Resources.redo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TxtPlus.My.Resources.Resources.soiconsline_06">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TxtPlus.My.Resources.Resources.Your_paragraph_text">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>
