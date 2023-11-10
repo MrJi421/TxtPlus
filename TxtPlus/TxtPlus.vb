@@ -163,11 +163,62 @@ Public Class TxtPlus
         AboutBox1.Show()
     End Sub
 
-    Private Sub CustomizeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CustomizeToolStripMenuItem.Click
+    Private Sub CustomizeToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Customize.ShowDialog()
     End Sub
 
     Private Sub TxtPlus_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         RichTextBox1.ForeColor = Color.Black
+        enableDisableBtns()
+    End Sub
+
+
+    Public Sub enableDisableBtns()
+        If RichTextBox1.SelectionLength > 0 Then
+            CutToolStripButton.Enabled = True
+            CopyToolStripButton.Enabled = True
+            CutToolStripMenuItem.Enabled = True
+            CopyToolStripMenuItem.Enabled = True
+        Else
+            CutToolStripButton.Enabled = False
+            CopyToolStripButton.Enabled = False
+            CutToolStripMenuItem.Enabled = False
+            CopyToolStripMenuItem.Enabled = False
+        End If
+
+        ' Check if there is text in the clipboard that can be pasted
+        If Clipboard.GetDataObject().GetDataPresent(DataFormats.Text) Then
+            PasteToolStripButton.Enabled = True
+            PasteToolStripMenuItem.Enabled = True
+        Else
+            PasteToolStripButton.Enabled = False
+            PasteToolStripMenuItem.Enabled = False
+        End If
+    End Sub
+    Public Function WordCount() As Integer
+        ' Split the text into words based on whitespace
+        Dim words As String() = RichTextBox1.Text.Split({" "c, ControlChars.Tab, ControlChars.Lf, ControlChars.Cr}, StringSplitOptions.RemoveEmptyEntries)
+        Return words.Length
+    End Function
+
+    Public Function LetterCount() As Integer
+        ' Count the total number of letters in the text
+        Dim letterCounter As Integer = 0
+        For Each c As Char In RichTextBox1.Text
+            If Char.IsLetter(c) Then
+                letterCounter += 1
+            End If
+        Next
+        Return letterCounter
+    End Function
+    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox1.TextChanged, RichTextBox1.SelectionChanged
+        enableDisableBtns()
+        WordCountLbl.Text = WordCount()
+        LetterCountLbl.Text = LetterCount()
+
+    End Sub
+
+    Private Sub ToolStripContainer1_TopToolStripPanel_Click(sender As Object, e As EventArgs) Handles ToolStripContainer1.TopToolStripPanel.Click
+
     End Sub
 End Class

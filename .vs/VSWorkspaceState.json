@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TxtPlus",
+    "\\TxtPlus\\My Project"
   ],
-  "SelectedNode": "\\TxtPlus.sln",
+  "SelectedNode": "\\TxtPlus\\My Project\\Dialog1.vb",
   "PreviewInSolutionExplorer": false
 }
